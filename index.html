@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>The Original Hangman</title>
+  <!-- Bootstrap File and CSS File -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="C:\Users\Julia\OneDrive\code\word-guess-game\assets\css\style.css">
+
+</head>
+
+<body>
+
+  <!--This is where the code for the Nav Bar goes. This nav bar is stick to the top and collapses when the browser hits 991px across-->
+          <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarTogglerDemo01" >
+                    <a class="navbar-brand" href="#">OG Hangman</a>
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                      <li class="nav-item">
+                        <button class="nav-link">Start</button>
+                        </li>
+                      <li class="nav-item">
+                        <button class="nav-link" onClick="reset()">Play Again</button>
+                      </li>
+                    </ul>
+                  </div>
+                </nav>
+  
+  <!--This is where the content for the Homepage goes-->
+              <div class="container">
+                <div class="row">
+                  <br>
+                </div>  
+                <div class="row">
+                      <div class="col-md-2">
+                          <img src="C:\Users\Julia\OneDrive\code\word-guess-game\assets\images\hangman.gif" alt="Hangman Picture">
+                          <p>Number of Guesses:</p>
+                          <div id="number-of-guesses"></div>
+                      </div>
+                      <div class="col-md-1" id="wordText">
+                        <div id="underline1" class="underline" style='border-bottom:1px solid rgb(21, 18, 180)'; width="20px"; hieght="20px">
+                          <div id="letter1" class="letter">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-1" id="wordText">
+                          <div id="underline2" class="underline" style='border-bottom:1px solid rgb(21, 18, 180)'; width="10px">
+                            <div id="letter2" class="letter">
+                            </div>
+                          </div>
+                      </div>
+                      <div class="col-md-1" id="wordText">
+                          <div id="underline3" class="underline" style='border-bottom:1px solid rgb(21, 18, 180)'; width="10px">
+                            <div id="letter3" class="letter">
+                            </div>
+                          </div>
+                      </div>
+                      <div class="col-md-1" id="wordText">
+                          <div id="underline4" class="underline" style='border-bottom:1px solid rgb(21, 18, 180)'; width="10px">
+                            <div id="letter4" class="letter">
+                            </div>
+                          </div>
+                      </div>
+                      <div class="col-md-1" id="wordText">
+                          <div id="underline5" class="underline" style='border-bottom:1px solid rgb(21, 18, 180)'; width="10px">
+                            <div id="letter5" class="letter">
+                            </div>
+                          </div>
+                      </div>
+                      <div class="col-md-1" id="wordText">
+                          <div id="underline6" class="underline" style='border-bottom:1px solid rgb(21, 18, 180)'; width="10px">
+                            <div id="letter6" class="letter">
+                            </div>
+                          </div>
+                      </div>
+                      <div class="col-md-1" id="wordText">
+                          <div id="underline7" class="underline" style='border-bottom:1px solid rgb(21, 18, 180)'; width="10px">
+                            <div id="letter7" class="letter">
+                            </div>
+                          </div>
+                      </div>
+                      <div class="col-md-1" id="wordText">
+                          <div id="underline8" class="underline" style='border-bottom:1px solid rgb(21, 18, 180)'; width="10px">
+                            <div id="letter8" class="letter">
+                            </div>
+                          </div>
+                      </div>
+                      <div class="col-md-1" id="wordText">
+                          <div id="underline9" class="underline" style='border-bottom:1px solid rgb(21, 18, 180)'; width="10px">
+                            <div id="letter9" class="letter">
+                            </div>
+                          </div>
+                      </div>
+                      <div class="col-md-1" id="wordText">
+                          <div id="underline10" class="underline" style='border-bottom:1px solid rgb(21, 18, 180)'; width="10px">
+                            <div id="letter10" class="letter">
+                            </div>
+                          </div>
+                      </div>
+  
+                  </div>
+              </div>
+          </div>
+  
+  <!--This is the code that let's Bootstrap run Javascript to include actions like a drop down toggle menu-->
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+      <script src="C:\Users\Julia\OneDrive\code\word-guess-game\assets\javascript\game.js"></script>
+    </body>
+  
+  </html>
