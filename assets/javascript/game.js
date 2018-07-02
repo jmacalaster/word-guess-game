@@ -172,7 +172,7 @@ function revealFunction10() {
 
 //Now we're going to start getting into the game of guessing the letters!//
 
-var guesses = "Yikes!  ";
+var guesses = 0;
 
 // This function is run whenever the user presses a key.
 document.onkeyup = function(event) {
@@ -231,5 +231,18 @@ numberGuesses.appendChild(guessesText);
         revealFunction10();
     }
 
+    else {
+        guesses++;
+    }
+
+    if (guesses > 10){
+        guesses=0;
+        alert("Game Over!");
+        phrases();
+    }
 
 }
+
+
+
+
