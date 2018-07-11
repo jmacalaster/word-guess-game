@@ -179,8 +179,9 @@ document.onkeyup = function(event) {
 
 //First add 1 to my number of guesses
 var numberGuesses = document.getElementById("number-of-guesses");
-var guessesText = document.createTextNode(guesses);
-numberGuesses.appendChild(guessesText);
+numberGuesses.innerText = guesses
+// var guessesText = document.createTextNode(guesses);
+//numberGuesses.appendChild(guessesText);
 
 // Determines which key was pressed.
     var userGuess = event.key;
